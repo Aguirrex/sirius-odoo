@@ -8,3 +8,7 @@ class AccountMoveCustom(models.Model):
         ('a', 'Tipo A'),
         ('b', 'Tipo B'),
     ], string="Tipo de Factura")
+
+class MiFactura(models.Model):
+    _name = 'mi.factura'
+    name = fields.Char()
