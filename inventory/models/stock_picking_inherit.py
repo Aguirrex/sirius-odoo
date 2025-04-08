@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import models, fields, api, _ # Importaciones necesarias
-from odoo.exceptions import UserError    # Para lanzar errores si es necesario
+from odoo import models, fields
 
 class StockPickingInherit(models.Model):
     _inherit = 'stock.picking'
@@ -24,10 +23,6 @@ class StockPickingInherit(models.Model):
 
     # --- 3. Sobrescribir un método existente ---
     def button_validate(self):
-        for picking in self:
-            if picking.x_requiere_revision_calidad and not picking.x_referencia_externa:
-                raise UserError(_("La transferencia requiere revisión de calidad, por favor, añada la 'Referencia Externa' antes de validar."))
- 
         res = super(StockPickingInherit, self).button_validate()
 
         return res
@@ -44,8 +39,8 @@ class StockPickingInherit(models.Model):
             'type': 'ir.actions.client',
             'tag': 'display_notification',
             'params': {
-                'title': _('Acción Ejecutada'),
-                'message': _('Mi acción personalizada se ejecutó en %s.') % self.name,
+                'title': ('Acción Ejecutada'),
+                'message': ('Mi acción personalizada se ejecutó en %s.') % self.name,
                 'sticky': False,
             }
         }
