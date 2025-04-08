@@ -4,7 +4,8 @@
 from odoo import models, fields
 
 class CustomSaleOrder(models.Model):
+    _name = 'sale.order.custom'
     _inherit = 'sale.order'
 
-    x_custom_field = fields.Boolean(
+    x_custom_field = fields.Char(
         string='Happy User')
