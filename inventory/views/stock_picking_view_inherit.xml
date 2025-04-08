@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_picking_form_inherit_mi_modulo" model="ir.ui.view">
+            <field name="name">stock.picking.form.inherit.mi.modulo</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <!-- Usamos XPath para localizar elementos en la vista original y añadir/modificar contenido -->
+
+                <!-- 1. Añadir el campo 'x_referencia_externa' después del campo 'origin' -->
+                <xpath expr="//field[@name='origin']" position="after">
+                    <field name="x_referencia_externa"/>
+                </xpath>
+
+                <!-- 2. Añadir el campo 'x_requiere_revision_calidad' dentro del grupo 'other_infos'
+                     (busca un grupo que contenga el campo 'picking_type_id' como referencia) -->
+                <xpath expr="//group[.//field[@name='picking_type_id']]" position="inside">
+                     <field name="x_requiere_revision_calidad"/>
+                </xpath>
+
+                <!-- 3. Modificar un atributo de un campo existente: Hacer el campo 'scheduled_date' solo lectura si 'x_requiere_revision_calidad' es True -->
+                <!-- Nota: Esto es un ejemplo, la lógica condicional compleja de readonly/invisible se maneja mejor con attrs en la definición del campo o en Python -->
+                <!-- Manera más simple: añadir un atributo directamente -->
+                 <xpath expr="//field[@name='scheduled_date']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('x_requiere_revision_calidad', '=', True)]}</attribute>
+                    <!-- Si ya existía un attrs, esto lo sobrescribe. Para añadir condiciones a un attrs existente, es más complejo y a veces requiere heredar y modificar más XML -->
+                </xpath>
+
+                <!-- 4. Añadir nuestro botón personalizado en la cabecera (header) antes del botón 'button_validate' -->
+                 <xpath expr="//header/button[@name='button_validate']" position="before">
+                    <button name="mi_accion_personalizada" <!-- Nombre del método Python a llamar -->
+                            string="Mi Acción Personalizada" <!-- Texto del botón -->
+                            type="object"                   <!-- 'object' significa que llama a un método Python en el servidor -->
+                            class="oe_highlight"            <!-- Clase CSS para resaltar el botón (opcional) -->
+                            attrs="{'invisible': [('state', 'not in', ['confirmed', 'assigned'])]}"/> <!-- Hacer el botón visible solo en ciertos estados -->
+                 </xpath>
+
+                 <!-- 5. Modificar la etiqueta (string) de un campo existente directamente en la vista -->
+                 <!-- Esto es menos común que cambiarlo en el modelo Python, pero es posible. -->
+                 <!-- Si cambiaste el string en Python, NO necesitas hacer esto. -->
+                 <!-- <xpath expr="//field[@name='note']" position="attributes">
+                     <attribute name="string">Notas (Modificado en Vista)</attribute>
+                 </xpath> -->
+
+                 <!-- 6. Añadir un campo dentro de una página del notebook (pestañas) -->
+                 <!-- Supongamos que queremos añadir la referencia externa también en la pestaña 'Operaciones' -->
+                  <xpath expr="//page[@name='operations']//field[@name='move_ids_without_package']" position="before">
+                      <div> <!-- Usamos un div para agrupar si es necesario -->
+                          <label for="x_referencia_externa" string="Ref. Externa (Pestaña Ops):"/>
+                          <field name="x_referencia_externa" nolabel="1"/> <!-- nolabel=1 para que no repita la etiqueta -->
+                      </div>
+                  </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>
