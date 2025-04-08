@@ -29,13 +29,13 @@
                 </xpath>
 
                 <!-- 4. Añadir nuestro botón personalizado en la cabecera (header) antes del botón 'button_validate' -->
-                 <xpath expr="//header/button[@name='button_validate']" position="before">
+                 <!-- <xpath expr="//header/button[@name='button_validate']" position="before">
                     <button name="mi_accion_personalizada" <!-- Nombre del método Python a llamar -->
                             string="Mi Acción Personalizada" <!-- Texto del botón -->
                             type="object"                   <!-- 'object' significa que llama a un método Python en el servidor -->
                             class="oe_highlight"            <!-- Clase CSS para resaltar el botón (opcional) -->
                             attrs="{'invisible': [('state', 'not in', ['confirmed', 'assigned'])]}"/> <!-- Hacer el botón visible solo en ciertos estados -->
-                 </xpath>
+                 </xpath> -->
 
                  <!-- 5. Modificar la etiqueta (string) de un campo existente directamente en la vista -->
                  <!-- Esto es menos común que cambiarlo en el modelo Python, pero es posible. -->
