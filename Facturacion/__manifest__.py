@@ -3,7 +3,7 @@
     'version': '1.0',
     'depends': ['account'],
     'data': [
-        'security/ir.model.access.csv',
+        # 'security/ir.model.access.csv',
         'views/invoicing.xml',
     ],
     'installable': True,
