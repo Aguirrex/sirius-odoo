@@ -19,7 +19,7 @@
 
                 
                  <xpath expr="//field[@name='scheduled_date']" position="attributes">
-                    <attribute name="attrs">{'readonly': [('x_requiere_revision_calidad', '=', True)]}</attribute>
+                    <attribute name="readonly">[('x_requiere_revision_calidad', '=', True)]</attribute>
                 </xpath>
 
                 
