@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<odoo>
-    <!-- Action definition for estate.property -->
-    <record id="action_sales" model="ir.actions.act_window">
-        <field name="name">Sales</field> <!-- Nombre que se verá en la UI para esta acción -->
-        <field name="res_model">sale.order</field> <!-- El modelo que gestionará esta acción -->
-        <field name="view_mode">list,form</field> <!-- Vistas disponibles: lista (tree) y formulario (form) -->
-    </record>
-</odoo>

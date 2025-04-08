@@ -7,6 +7,9 @@
             <xpath expr="//sheet//group" position="inside">
                 <field name="x_custom_field"/>
             </xpath>
+            <xpath expr="//div[hasclass('oe_chatter')]//div[hasclass('o_mail_activity')]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
         </field>
     </record>
-</odoo>
+</odoo> 

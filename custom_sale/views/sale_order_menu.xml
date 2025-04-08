@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <menuitem id="menu_sale_order_root" name="sale_order"/>
-    <menuitem id="menu_sale_order_advertisements" name="Advertisements" parent="menu_sale_order_root"/>
-    <menuitem id="menu_sale_order_property_action" action="action_sales" parent="menu_sale_order_advertisements"/>
-</odoo>
