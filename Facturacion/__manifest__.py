@@ -1,13 +1,11 @@
 {
-    'name': 'Facturacion Personalizada',
+    'name': 'Facturación personalizada',
     'version': '1.0',
-    'depends': ['account'],  # <<--- clave: depende de 'account'
-    'depends': ['account'],
+    'depends': ['account'],  # por ejemplo si vas a heredar de account.invoice
     'data': [
         'security/ir.model.access.csv',
-        'views/account.move.view.xml',
+        'views/invoicing.xml',
     ],
-
     'installable': True,
     'auto_install': False,
 }
