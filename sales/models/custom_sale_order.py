@@ -3,7 +3,7 @@
 
 from odoo import models, fields
 
-class SaleOrder(models.Model):
+class CustomSaleOrder(models.Model):
     _inherit = 'sale.order'
 
     happy_user = fields.Boolean(

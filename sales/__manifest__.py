@@ -1,7 +1,6 @@
 {
     "name": "Sales Management",
-    "depends": [
-        "sale"],
+    "depends": ["sale"],
 
 
     "data": [
