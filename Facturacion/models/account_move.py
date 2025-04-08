@@ -3,7 +3,7 @@ from odoo import models, fields, api
 class AccountMove(models.Model):
     _inherit = 'account.move'
 
-    fact = fields.Char(string='factura', required=True)
+    mi_campo_personalizado = fields.Char(string='Mi Campo Personalizado')
 
     @api.model
     def create(self, vals):

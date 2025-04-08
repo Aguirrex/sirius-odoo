@@ -1,5 +1,5 @@
 {
-    'name': 'Facturacion',
+    'name': 'Personalizacion Facturacion Sirius',
     'version': '1.0',
     'summary': 'Personalizaciones para el módulo de facturación',
     'description': """
@@ -11,8 +11,7 @@
     'category': 'Account',
     'depends': ['account'],
     'data': [
-        'security/ir.model.access.csv',
-        'views/account.move.view.xml',
+        'views/account_move_views.xml',
     ],
     'installable': True,
     'application': False,
