@@ -1,5 +1,5 @@
 {
-    'name': 'QuindiColors Inventario',
+    'name': 'QuindiColors Inventario ',
     'version': '1.0',
     'summary': """
         Este módulo gestiona el inventario de QuindiColors
