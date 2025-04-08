@@ -1,7 +1,7 @@
 {
     'name': 'Ventas Quindicolor',
-    'version': '3.3',
-    'author': 'Valentina',
+    'version': '1.0',
+    'author': 'Tu Nombre o Empresa',
     'category': 'Sales',
     'depends': ['base', 'sale'],
     'data': [

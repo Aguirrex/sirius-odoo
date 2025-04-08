@@ -27,14 +27,15 @@ class SaleOrder(models.Model):
     def _compute_total(self):
         for record in self:
             record.total_amount = sum(record.product_line_ids.mapped('subtotal'))
-            
+
+    # Métodos agregados
     def action_confirm(self):
         for record in self:
             record.state = 'confirm'
 
     def action_cancel(self):
         for record in self:
-            record.state = 'cancel'        
+            record.state = 'cancel'
 
 class SaleOrderLine(models.Model):
     _name = 'quindicolor.sale.order.line'
@@ -51,5 +52,3 @@ class SaleOrderLine(models.Model):
     def _compute_subtotal(self):
         for line in self:
             line.subtotal = line.quantity * line.price_unit
-
-            
