@@ -2,9 +2,9 @@
     <record id="view_order_form_custom" model="ir.ui.view">
         <field name="name">sale.order.form.custom</field>
         <field name="model">sale.order</field>
-        <!-- <field name="inherit_id" ref="sale.view_order_form"/> -->
+        <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
-            <xpath>
+            <xpath expr="//sheet//group" position="inside">
                 <field name="x_custom_field"/>
             </xpath>
         </field>
