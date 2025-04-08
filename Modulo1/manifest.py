@@ -5,6 +5,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/account.move.view.xml',
+        'views/account.menu.xml',
     ],
     'installable': True,
     'auto_install': False,

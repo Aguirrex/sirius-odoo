@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menú raíz personalizado -->
+    <menuitem id="menu_facturacion_root" name="Facturación Ext." sequence="10"/>
+
+    <!-- Submenú de Proveedores -->
+    <menuitem id="menu_facturacion_proveedores" name="Facturas Proveedor" parent="menu_facturacion_root" sequence="20"/>
+
+    <!-- Acción para mostrar facturas de proveedor con campo personalizado -->
+    <menuitem id="menu_facturacion_personalizada_action"
+              name="Lista Personalizada"
+              action="action_account_move_personalizada"
+              parent="menu_facturacion_proveedores"
+              sequence="30"/>
+
+    <!-- Acción vinculada al modelo account.move -->
+    <record id="action_account_move_personalizada" model="ir.actions.act_window">
+        <field name="name">Facturas Personalizadas</field>
+        <field name="res_model">account.move</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('move_type','=','in_invoice')]</field>
+        <field name="context">{}</field>
+    </record>
+</odoo>
