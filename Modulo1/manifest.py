@@ -1,5 +1,5 @@
 {
-    'name': 'Facturacion Personalizada',
+    'name': 'Facturacion Quindicolor',
     'version': '1.0',
     'depends': ['account'],  # <<--- clave: depende de 'account'
     'data': [
