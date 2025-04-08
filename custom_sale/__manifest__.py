@@ -1,5 +1,5 @@
 {
-    "name": "Custom Sales Module",
+    "name": "Custom Sales Module ",
     "version": "1.0",
     "depends": ["sale"],
     "data": [
