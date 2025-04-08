@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_account_move,access_account_move,account.model_move,tu_modulo.group_acceso_total_facturacion,1,1,1,1
+access_account_move_user,access.account.move.user,account.model_account_move,base.group_user,1,1,1,0
