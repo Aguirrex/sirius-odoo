@@ -5,8 +5,11 @@
     <field name="inherit_id" ref="sale.view_order_form"/>
     <field name="arch" type="xml">
       <xpath expr="//field[@name='partner_id']" position="after">
-        <field name="x_project_ref"/>
-        <field name="x_delivery_zone"/>
+          <field name="x_delivery_zone"/>
+      </xpath>
+      <xpath expr="//field[@name='payment_term_id']" position="replace">
+        <field name="payment_term_id"
+               domain="[('name', 'in', ('Pago inmediato','15 días','21 días','30 días'))]"/>
       </xpath>
     </field>
   </record>
