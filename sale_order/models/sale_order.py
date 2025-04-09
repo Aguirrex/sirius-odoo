@@ -2,31 +2,27 @@ from odoo import models, fields, api
 
 class SaleOrder(models.Model):
     _name = 'quindicolor.sale.order'
-    _description = 'Orden de Venta Quindicolor'
+    _description = 'Sale Order'
 
-    name = fields.Char(string='Referencia', required=True, copy=False, readonly=True, default='Nuevo')
-    date = fields.Date(string='Fecha', default=fields.Date.today, required=True)
-    customer_id = fields.Many2one('res.partner', string='Cliente', required=True)
-    business_line = fields.Selection([
-        ('madera', 'Madera'),
-        ('ferreteria', 'Ferretería'),
-        ('arquitectura', 'Arquitectura'),
-        ('adhesivos', 'Adhesivos'),
-        ('automotriz', 'Automotriz'),
-    ], string='Línea de Negocio', required=True)
-    product_line_ids = fields.One2many('quindicolor.sale.order.line', 'sale_order_id', string='Productos')
-    total_amount = fields.Float(string='Monto Total', compute='_compute_total', store=True)
+    name = fields.Char(string='Order Reference', required=True, copy=False, readonly=True, default='New')
+    date = fields.Date(string='Date', default=fields.Date.today)
+    customer_id = fields.Many2one('res.partner', string='Customer', required=True)
+    business_line = fields.Char(string='Business Line')
+    product_line_ids = fields.One2many('quindicolor.sale.order.line', 'order_id', string='Products')
+    notes = fields.Text(string='Notes')
+    total_amount = fields.Float(string='Total Amount', compute='_compute_total_amount', store=True)
     state = fields.Selection([
-        ('draft', 'Borrador'),
-        ('confirm', 'Confirmado'),
-        ('cancel', 'Cancelado')
-    ], default='draft', string='Estado')
-    notes = fields.Text(string='Notas')
+        ('draft', 'Draft'),
+        ('confirm', 'Confirmed'),
+        ('cancel', 'Cancelled'),
+    ], string='State', default='draft')
 
-    @api.depends('product_line_ids.subtotal')
-    def _compute_total(self):
-        for record in self:
-            record.total_amount = sum(record.product_line_ids.mapped('subtotal'))
+    @api.model
+    def create(self, vals):
+        if vals.get('name', 'New') == 'New':
+            vals['name'] = self.env['ir.sequence'].next_by_code('sale.order.sequence') or 'New'
+        result = super(SaleOrder, self).create(vals)
+        return result
 
     def action_confirm(self):
         self.state = 'confirm'
@@ -34,18 +30,7 @@ class SaleOrder(models.Model):
     def action_cancel(self):
         self.state = 'cancel'
 
-class SaleOrderLine(models.Model):
-    _name = 'quindicolor.sale.order.line'
-    _description = 'Línea Orden de Venta Quindicolor'
-
-    sale_order_id = fields.Many2one('quindicolor.sale.order', string='Orden de Venta')
-    product_id = fields.Many2one('product.product', string='Producto', required=True)
-    description = fields.Char(string='Descripción')
-    quantity = fields.Integer(string='Cantidad', default=1)
-    price_unit = fields.Float(string='Precio Unitario')
-    subtotal = fields.Float(string='Subtotal', compute='_compute_subtotal', store=True)
-
-    @api.depends('quantity', 'price_unit')
-    def _compute_subtotal(self):
-        for line in self:
-            line.subtotal = line.quantity * line.price_unit
+    @api.depends('product_line_ids.subtotal')
+    def _compute_total_amount(self):
+        for order in self:
+            order.total_amount = sum(line.subtotal for line in order.product_line_ids)
