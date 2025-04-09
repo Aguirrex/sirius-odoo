@@ -15,32 +15,3 @@ class StockPicking(models.Model):
         default=False,
         tracking=True
     )
-
-    # --- 2. Modificar atributos de un campo existente ---
-    note = fields.Text(
-        string="Notas Internas Personalizadas",
-    )
-
-    # --- 3. Sobrescribir un método existente ---
-    def button_validate(self):
-        res = super(StockPicking, self).button_validate()
-
-        return res
-
-    # --- 4. Añadir un nuevo método ---
-    def mi_accion_personalizada(self):
-
-        self.ensure_one()
-
-        if not self.x_referencia_externa:
-             self.x_referencia_externa = 'ACCION_EJECUTADA'
-
-        return {
-            'type': 'ir.actions.client',
-            'tag': 'display_notification',
-            'params': {
-                'title': ('Acción Ejecutada'),
-                'message': ('Mi acción personalizada se ejecutó en %s.') % self.name,
-                'sticky': False,
-            }
-        }

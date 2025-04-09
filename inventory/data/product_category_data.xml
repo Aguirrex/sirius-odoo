@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="0"> <!-- noupdate="1" evita que se sobrescriban si se modifican manualmente después -->
+<odoo noupdate="0">
     <data>
         <!-- Categorías de Producto Principales -->
         <record id="product_category_madera" model="product.category">
             <field name="name">Madera</field>
-            <!-- Puedes añadir 'parent_id' si quieres que sea subcategoría de otra -->
-            <!-- <field name="parent_id" ref="product.product_category_all"/> -->
         </record>
 
         <record id="product_category_ferreteria" model="product.category">
