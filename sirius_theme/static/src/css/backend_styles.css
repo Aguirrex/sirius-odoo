@@ -1,13 +1,13 @@
 /* Color naranja claro para botones principales */
 .btn-primary {
-    background-color: #f1c583 !important;
+    background-color: #fff2de !important;
     border-color: #FFA726 !important;
 }
 
 /* Color para pestaña activa */
 .o_notebook .nav-tabs > li > a.active,
 .o_notebook .nav-tabs > li > a.active:hover {
-    background-color: #ecc993 !important;
+    background-color: #fff5e6 !important;
     color: white !important;
     border-color: #FFA726 !important;
     font-weight: bold;
@@ -15,7 +15,7 @@
 
 /* Crear factura (naranja) */
 .btn.btn-primary.oe_highlight {
-    background-color: #ffdda9 !important; /* Naranja claro */
+    background-color: #fff3e0 !important; /* Naranja claro */
     border-color: #FFA726 !important;
     color: white !important;
 }
