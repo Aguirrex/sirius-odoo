@@ -13,11 +13,9 @@
         <attribute name="invisible">1</attribute>
       </xpath>
       <!-- Ocultar botón "Quote Builder" en portal -->
-      <template id="portal_quote_content_inherit" inherit_id="sale.portal_quote">
-            <xpath expr="//a[contains(@href, 'quotation-builder')]" position="attributes">
-                <attribute name="t-if">False</attribute>
-            </xpath>
-      </template>
+      <xpath expr="//button[contains(@name, 'open_quotation_builder')]" position="attributes">
+        <attribute name="invisible">1</attribute>
+      </xpath>
     </field>
   </record>
 </odoo>
