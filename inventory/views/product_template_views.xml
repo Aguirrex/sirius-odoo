@@ -7,8 +7,7 @@
             <field name="inherit_id" ref="product.product_template_form_view"/>
             <field name="arch" type="xml">
                 <xpath expr="//page[@name='general_information']//group[1]" position="inside">
-                    <!-- Campo de control, usualmente invisible en la interfaz -->
-                    <field name="x_is_paint"/>
+                    <field name="x_is_paint" string="Es pintura?"/>
 
                     <!-- Usamos grupos para organizar los campos -->
                     <!-- El atributo 'invisible' reemplaza a 'attrs' para la visibilidad condicional en Odoo 16+ -->
