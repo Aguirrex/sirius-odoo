@@ -21,8 +21,7 @@ class SaleOrder(models.Model):
     def create(self, vals):
         if vals.get('name', 'New') == 'New':
             vals['name'] = self.env['ir.sequence'].next_by_code('sale.order.sequence') or 'New'
-        result = super(SaleOrder, self).create(vals)
-        return result
+        return super(SaleOrder, self).create(vals)
 
     def action_confirm(self):
         self.state = 'confirm'
