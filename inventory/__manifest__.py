@@ -8,7 +8,7 @@
     'depends': ['stock'],  # Dependencia del módulo stock
     'data': [
         'views/stock_picking_view_inherit.xml',
-        "product_template_views.xml"
+        "views/product_template_views.xml"
     ],
     'installable': True,
     'application': False,
