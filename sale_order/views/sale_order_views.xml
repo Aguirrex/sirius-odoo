@@ -41,32 +41,13 @@
         </field>
     </record>
 
-    <!-- Vista tree del modelo sale.order -->
-    <record id="view_quindicolor_sale_order_tree" model="ir.ui.view">
-        <field name="name">quindicolor.sale.order.tree</field>
-        <field name="model">quindicolor.sale.order</field>
-        <field name="arch" type="xml">
-            <tree>
-                <field name="name"/>
-                <field name="date"/>
-                <field name="customer_id"/>
-                <field name="business_line"/>
-                <field name="total_amount"/>
-                <field name="state"/>
-            </tree>
-        </field>
-    </record>
-
-    <!-- Acción y menú -->
     <record id="action_quindicolor_sale_order" model="ir.actions.act_window">
-        <field name="name">Ordenes de Venta</field>
+        <field name="name">Órdenes de Venta</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">quindicolor.sale.order</field>
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_quindicolor_sale" name="Ventas Quindicolor" sequence="10"/>
-    <menuitem id="menu_quindicolor_sale_order" name="Órdenes de Venta"
-              parent="menu_quindicolor_sale"
-              action="action_quindicolor_sale_order"/>
+    <menuitem id="menu_quindicolor_root" name="Quindicolor" sequence="10"/>
+    <menuitem id="menu_quindicolor_sale_order" name="Ventas" parent="menu_quindicolor_root" action="action_quindicolor_sale_order"/>
 </odoo>
