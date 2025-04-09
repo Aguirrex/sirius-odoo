@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields
 
-class ProductTemplateInherit(models.Model):
+class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
     x_base_type = fields.Selection([

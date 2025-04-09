@@ -7,6 +7,7 @@
     'category': 'Inventory',  # Categoría apropiada
     'depends': ['stock'],  # Dependencia del módulo stock
     'data': [
+        "security/ir.model.access.csv",
         'views/stock_picking_view_inherit.xml',
         "views/product_template_views.xml"
     ],

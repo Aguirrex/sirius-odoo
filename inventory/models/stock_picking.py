@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields
 
-class StockPickingInherit(models.Model):
+class StockPicking(models.Model):
     _inherit = 'stock.picking'
 
     x_referencia_externa = fields.Char(
@@ -23,7 +23,7 @@ class StockPickingInherit(models.Model):
 
     # --- 3. Sobrescribir un método existente ---
     def button_validate(self):
-        res = super(StockPickingInherit, self).button_validate()
+        res = super(StockPicking, self).button_validate()
 
         return res
 
