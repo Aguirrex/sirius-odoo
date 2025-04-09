@@ -96,12 +96,12 @@
 
 /* Estilo manual para cada texto */
 .o_field_badge span.badge:contains("Orden de venta") {
-    background-color: #2e7d32 !important;
+    background-color: #b0ddb2 !important;
     color: white !important;
 }
 
 .o_field_badge span.badge:contains("Cotización") {
-    background-color: #f9a825 !important;
+    background-color: #cfc1aa !important;
     color: white !important;
 }
 
@@ -133,27 +133,38 @@
 /* Botón secundario (cancelar, cerrar) */
 .btn-secondary {
     background-color: #b0bec5 !important;
-    border-color: #90a4ae !important;
+    border-color: #292d30 !important;
     color: white !important;
 }
 
-/* 🦓 Estilo zebra para líneas de productos en formularios */
-.o_form_view .o_field_x2many .o_list_table tbody tr:nth-child(odd) {
-    background-color: #ffead091; /* color claro para filas impares */
+/* 🦓 Zebra striping para líneas de productos en formularios */
+.o_form_view .o_field_x2many_list tbody tr:nth-child(odd) {
+    background-color: #ffebd7; /* color para filas impares */
 }
 
-.o_form_view .o_field_x2many .o_list_table tbody tr:nth-child(even) {
-    background-color: #ffce9d7a; /* color más claro para filas pares */
+.o_form_view .o_field_x2many_list tbody tr:nth-child(even) {
+    background-color: #ffddb0; /* color para filas pares */
 }
 
-/* Opcional: suavizar bordes */
-.o_form_view .o_field_x2many .o_list_table tbody tr {
-    border-bottom: 1px solid #e0e0e0;
-}
-
-/* Hover para mejor UX */
-.o_form_view .o_field_x2many .o_list_table tbody tr:hover {
-    background-color: #13e736;
+/* Efecto hover para mejor interacción */
+.o_form_view .o_field_x2many_list tbody tr:hover {
+    background-color: #fff3e0;
     transition: background-color 0.2s ease;
 }
 
+
+/* 🔘 Checkboxes activos */
+.o_form_view .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #fb8c00 !important; /* Naranja */
+    border-color: #fb8c00 !important;
+}
+
+/* 🏷️ Estilo personalizado para etiquetas */
+.badge.badge-primary,
+.o_tag_color_0 {
+    background-color: #645f5a8a !important; /* Azul vibrante */
+    color: white !important;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 4px 10px;
+}
