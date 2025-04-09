@@ -7,7 +7,7 @@
     'assets': {
         'web.assets_backend': [
             'sirius_theme/static/src/css/backend_styles.css',
-            # 'views/assets_backend.xml',
+            'views/assets_backend.xml',
         ],
     },
     'installable': True,
