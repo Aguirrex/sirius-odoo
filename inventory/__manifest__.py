@@ -9,7 +9,8 @@
     'data': [
         "security/ir.model.access.csv",
         'views/stock_picking_view_inherit.xml',
-        "views/product_template_views.xml"
+        "views/product_template_views.xml",
+        'views/product_brand_views.xml', 
     ],
     'installable': True,
     'application': False,

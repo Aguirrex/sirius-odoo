@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Acción para abrir la vista de Marcas de Producto -->
+        <record id="action_product_brand_view" model="ir.actions.act_window">
+            <field name="name">Marcas de Producto</field>
+            <field name="res_model">product.brand</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Crea una nueva marca de producto
+                </p><p>
+                    Gestiona las diferentes marcas de los productos que manejas.
+                </p>
+            </field>
+        </record>
+
+        <!-- Elemento de Menú Principal (Opcional, si quieres un menú de primer nivel) -->
+        <!-- Puedes omitir esto si quieres ponerlo bajo un menú existente como Inventario -->
+        <!--
+        <menuitem
+            id="menu_product_brand_root"
+            name="Gestión de Marcas"
+            sequence="10"/>
+        -->
+
+        <!-- Elemento de Menú bajo Configuración de Inventario -->
+        <menuitem
+            id="menu_product_brand"
+            name="Marcas de Producto"
+            action="action_product_brand_view"
+            parent="stock.menu_stock_config_settings"
+            sequence="50"/>
+            <!-- Ajusta 'parent' si quieres que esté en otro menú -->
+            <!-- Ajusta 'sequence' para cambiar el orden en el menú -->
+
+    </data>
+</odoo>
