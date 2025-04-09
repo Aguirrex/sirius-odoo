@@ -179,24 +179,21 @@
     padding: 4px 10px;
 }
 
-/* 📦 Botón tipo app a la derecha del menú superior */
-.custom-app-button {
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
-    background: #fff3e0;
-    border-radius: 6px;
-    padding: 6px 14px;
-}
-
-.custom-app-button a {
-    color: #fb8c00;
-    font-weight: 600;
-    text-decoration: none;
+/* Botón del pepe */
+/* .custom-navbar-link {
+    margin-left: auto;
+    margin-right: 20px;
+    color: #080707;
+    font-weight: bold;
     font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #fff3e0;
+    text-decoration: none;
+    transition: background 0.2s ease;
 }
 
-.custom-app-button a:hover {
-    color: #e65100;
-    text-decoration: underline;
-}
+.custom-navbar-link:hover {
+    background-color: #ffcc80;
+    color: #000;
+} */
