@@ -1,7 +1,7 @@
-<odoo>
+<!-- <odoo>
   <template id="sirius_topbar_logo" inherit_id="web.webclient_templates">
     <xpath expr="//div[@class='o_main_navbar']" position="inside">
       <div class="sirius-global-logo"/>
     </xpath>
   </template>
-</odoo>
+</odoo> -->
