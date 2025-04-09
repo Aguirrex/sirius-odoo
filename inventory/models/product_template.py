@@ -35,6 +35,7 @@ class ProductTemplate(models.Model):
     # Si prefieres algo más simple, puedes cambiarlo a fields.Char o fields.Selection.
     x_brand = fields.Many2one('product.brand', string='Marca', help="Marca del producto (ej. Quindicolor, Pintuland, Sika).")
 
+    x_show_technical_details = fields.Boolean(string="Mostrar Detalles Técnicos", compute='_compute_show_technical_details', store=True)
 
     @api.depends('categ_id')
     def _compute_show_technical_details(self):
