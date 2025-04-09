@@ -1,14 +1,12 @@
 <odoo>
   <template id="navbar_custom_link" inherit_id="web.webclient_templates">
     
-    <!-- 🔗 Enlace flotante dentro del navbar general -->
     <xpath expr="//div[@class='o_main_navbar']" position="inside">
       <a class="custom-navbar-link" href="/mi_portal" target="_blank">
         🔗 Mi Portal
       </a>
     </xpath>
 
-    <!-- 📦 Botón tipo módulo, fijo en la parte derecha de la barra -->
     <xpath expr="//div[@class='o_menu_systray']" position="before">
       <div class="custom-app-button">
         <a href="/mi_portal" target="_blank">🔗 Acceso Rápido</a>

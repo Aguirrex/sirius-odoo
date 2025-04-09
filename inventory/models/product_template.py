@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import models, fields, api
+from odoo import models, fields
 
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
@@ -10,14 +10,12 @@ class ProductTemplate(models.Model):
         ('epoxica', 'Epóxica'),
         ('poliuretano', 'Poliuretano'),
         ('nitro', 'Nitro')
-        # Puedes agregar más opciones aquí
     ], string='Tipo Base', help="Tipo de base del producto para filtrado y reportes.")
 
     x_finish = fields.Selection([
         ('mate', 'Mate'),
         ('satinado', 'Satinado'),
         ('brillante', 'Brillante')
-        # Puedes agregar más opciones aquí
     ], string='Acabado', help="Acabado final del producto.")
 
     x_use = fields.Selection([
@@ -26,7 +24,6 @@ class ProductTemplate(models.Model):
         ('metal', 'Metal'),
         ('madera', 'Madera'),
         ('pared', 'Pared')
-        # Puedes agregar más opciones aquí
     ], string='Uso Recomendado', help="Uso principal recomendado para el producto.")
 
     x_performance = fields.Float(string='Rendimiento (m²/galón)', help="Rendimiento aproximado del producto por galón.")
