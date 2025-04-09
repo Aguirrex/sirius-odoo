@@ -7,7 +7,7 @@
 /* Color para pestaña activa */
 .o_notebook .nav-tabs > li > a.active,
 .o_notebook .nav-tabs > li > a.active:hover {
-    background-color: #FFA726 !important;
+    background-color: #f8a529 !important;
     color: white !important;
     border-color: #FFA726 !important;
     font-weight: bold;
@@ -15,33 +15,33 @@
 
 /* Crear factura (naranja) */
 .btn.btn-primary.oe_highlight {
-    background-color: #FFA726 !important; /* Naranja claro */
+    background-color: #ffdda9 !important; /* Naranja claro */
     border-color: #FFA726 !important;
     color: white !important;
 }
 
 /* Enviar por correo (azul) */
 .o_form_button_send {
-    background-color: #42A5F5 !important;
-    border-color: #42A5F5 !important;
+    background-color: #ba90ff !important;
+    border-color: #9849ff !important;
     color: white !important;
 }
 
 /* Vista previa (gris azulado) */
 .o_form_button_preview {
-    background-color: #90A4AE !important;
-    border-color: #90A4AE !important;
+    background-color: #a6dcf7 !important;
+    border-color: #58c4fa !important;
     color: white !important;
 }
 
 /* Cancelar (rojo) */
 .o_form_button_cancel {
-    background-color: #EF5350 !important;
+    background-color: #ffaaa8 !important;
     border-color: #EF5350 !important;
     color: white !important;
 }
 
-.sirius-logo-module {
+/* .sirius-logo-module {
     background-image: url('/sirius_theme/static/src/img/logo_topbar.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -49,4 +49,4 @@
     width: 100px;
     height: 40px;
     margin-right: 15px;
-}
+} */
