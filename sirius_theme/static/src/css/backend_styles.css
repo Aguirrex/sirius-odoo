@@ -61,31 +61,6 @@
     object-fit: contain;
 }
 
-/* 🎨 Colores personalizados para badges de estado */
-.badge.o_status {
-    border-radius: 12px;
-    font-weight: bold;
-    font-size: 13px;
-    padding: 4px 12px;
-}
-
-/* Verde oscuro para "Orden de venta" */
-.badge.o_status:has(span:contains("Orden de venta")) {
-    background-color: #b1ffb5 !important;
-    color: #fff;
-}
-
-/* Amarillo mostaza para "Cotización" */
-.badge.o_status:has(span:contains("Cotización")) {
-    background-color: #fadba9 !important;
-    color: #fff;
-}
-
-/* Púrpura para "Cotización enviada" */
-.badge.o_status:has(span:contains("Cotización enviada")) {
-    background-color: #e0afff !important;
-    color: #fff;
-}
 
 /* 🧭 Barra de encabezado de lista */
 .o_list_view thead > tr {
@@ -106,23 +81,58 @@
 }
 
 
+/* 🎨 Badges de estados */
+.o_field_badge span.badge {
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-size: 13px;
+}
+
 /* Orden de venta */
-.o_field_badge:has(.badge:contains("Orden de venta")) .badge {
-    background-color: #baf0bd !important;
-    color: #fff !important;
-    border: none;
+.o_field_badge span.badge:after {
+    content: attr(data-content);
 }
 
-/* Cotización */
-.o_field_badge:has(.badge:contains("Cotización")) .badge {
-    background-color: #f8e3c2 !important;
-    color: #fff !important;
-    border: none;
+/* Estilo manual para cada texto */
+.o_field_badge span.badge:contains("Orden de venta") {
+    background-color: #2e7d32 !important;
+    color: white !important;
 }
 
-/* Cotización enviada */
-.o_field_badge:has(.badge:contains("Cotización enviada")) .badge {
-    background-color: #ddc0f0 !important;
-    color: #fff !important;
-    border: none;
+.o_field_badge span.badge:contains("Cotización") {
+    background-color: #f9a825 !important;
+    color: white !important;
+}
+
+.o_field_badge span.badge:contains("Cotización enviada") {
+    background-color: #6a1b9a !important;
+    color: white !important;
+}
+
+/* 🌐 Barra superior global */
+.o_main_navbar {
+    background-color: #1e293b !important; /* azul grisáceo */
+    color: white !important;
+}
+
+/* Menú principal (texto) */
+.o_main_navbar .o_menu_sections .dropdown-toggle,
+.o_main_navbar .o_menu_brand {
+    color: #ffa726 !important;  /* Naranja */
+    font-weight: bold;
+}
+
+/* Botón principal (ej. Nuevo, Guardar, Crear) */
+.btn-primary {
+    background-color: #fb8c00 !important; /* naranja fuerte */
+    border-color: #ef6c00 !important;
+    color: white !important;
+}
+
+/* Botón secundario (cancelar, cerrar) */
+.btn-secondary {
+    background-color: #b0bec5 !important;
+    border-color: #90a4ae !important;
+    color: white !important;
 }
