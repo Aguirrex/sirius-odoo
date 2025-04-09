@@ -4,6 +4,9 @@
     'category': 'Tools',
     'summary': 'Personalización visual del backend para Sirius',
     'depends': ['web'],
+    'data': [
+        'views/navbar_custom.xml',  # ⬅️ Aquí van las vistas XML normales
+    ],
     'assets': {
         'web.assets_backend': [
             'sirius_theme/static/src/css/backend_styles.css',

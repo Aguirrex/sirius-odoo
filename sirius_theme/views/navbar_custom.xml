@@ -1,0 +1,9 @@
+<odoo>
+  <template id="navbar_custom_link" inherit_id="web.webclient_templates">
+    <xpath expr="//div[@class='o_main_navbar']" position="inside">
+      <a class="custom-navbar-link" href="/mi_portal" target="_blank">
+        🔗 Mi Portal
+      </a>
+    </xpath>
+  </template>
+</odoo>
