@@ -23,6 +23,9 @@
                         <field name="x_brand"/>
                     </group>
                 </xpath>
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <attribute name="placeholder">Por ejemplo, pintura azul</attribute>
+                </xpath>
             </field>
         </record>
     </data>
