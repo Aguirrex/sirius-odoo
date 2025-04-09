@@ -29,6 +29,8 @@
         <field name="name">Pegante Para Madera Cemento PL 285</field>
         <field name="categ_id" ref="inventory.product_category_adhesivos"/>
         <field name="type">consu</field>
+        <field name="image_1920" type="base64" file="inventory/static/img/products/product_adhesivos_5.png"/>
+
     </record>
     
     <record id="product_adhesivos_6" model="product.template">
