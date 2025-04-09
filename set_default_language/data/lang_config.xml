@@ -1,16 +1,8 @@
-<!-- lang_config.xml -->
 <odoo>
     <data noupdate="1">
-
-        <!-- Instalar el idioma español (Colombia) -->
-        <record id="language_install_es" model="base.language.install">
-            <field name="lang">es_CO</field>
+        <!-- Activar el idioma español (Colombia) directamente -->
+        <record id="base.lang_es_CO" model="res.lang">
+            <field name="active">True</field>
         </record>
-
-        <!-- Ejecutar la instalación del idioma -->
-        <function model="base.language.install" name="create">
-            <value model="base.language.install" eval="ref('language_install_es')"/>
-        </function>
-
     </data>
 </odoo>
