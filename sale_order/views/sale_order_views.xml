@@ -9,10 +9,7 @@
           <field name="x_delivery_zone"/>
           <field name="user_id" string="Vendedor"/>
       </xpath>
-      <xpath expr="//button[contains(@name, 'open_quotation_builder')]" position="attributes">
-        <attribute name="invisible">1</attribute>
-      </xpath>
-      
+            
     </field>
   </record>
 </odoo>
