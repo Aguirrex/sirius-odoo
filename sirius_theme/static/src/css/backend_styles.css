@@ -61,37 +61,37 @@
     object-fit: contain;
 } */
 
-.badge.o_status {
+/* .badge.o_status {
     font-weight: bold;
     font-size: 13px;
     padding: 4px 10px;
     border-radius: 8px;
-}
+} */
 
 /* Colores personalizados por estado */
 .badge.o_status:contains("Orden de venta") {
-    background-color: #00897B !important;  /* verde turquesa */
+    background-color: #2bcebd3b !important;  /* verde turquesa */
     color: white;
 }
 
 .badge.o_status:contains("Cotización") {
-    background-color: #F9A825 !important;  /* amarillo mostaza */
+    background-color: #f9a82546 !important;  /* amarillo mostaza */
     color: white;
 }
 
 .badge.o_status:contains("Cotización enviada") {
-    background-color: #6A1B9A !important;  /* púrpura */
+    background-color: #691b9a3a !important;  /* púrpura */
     color: white;
 }
 
 
 .o_main_navbar {
-    background-color: #263238 !important;  /* gris oscuro tipo slate */
+    background-color: #2043553b !important;  /* gris oscuro tipo slate */
     color: white !important;
 }
 
 .o_main_navbar .o_menu_brand {
-    color: #FFA726 !important; /* naranja claro para el texto del nombre del módulo */
+    color: #ffa82638 !important; /* naranja claro para el texto del nombre del módulo */
 }
 
 
@@ -101,12 +101,12 @@
 }
 
 .o_list_view tbody > tr {
-    background-color: #fefefe;
+    background-color: #f5bcbc27;
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
     transition: all 0.2s ease-in-out;
 }
 
 .o_list_view tbody > tr:hover {
-    background-color: #f1f8ff;
+    background-color: #e6f2ff;
 }
