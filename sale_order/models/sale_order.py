@@ -9,5 +9,5 @@ class SaleOrder(models.Model):
         ('zona_centro', 'Zona Centro'),
     ], string="Zona de Entrega")
 
-
+    user_id = fields.Many2one('res.users', string='Salesperson')
 
