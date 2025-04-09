@@ -4,6 +4,7 @@
     <field name="model">sale.order</field>
     <field name="inherit_id" ref="sale.view_order_form"/>
     <field name="arch" type="xml">
+    <!-- Agregar zona de entrega y vendedor a la vista de orden de venta -->
       <xpath expr="//field[@name='partner_id']" position="after">
           <field name="x_delivery_zone"/>
           <field name="user_id" string="Vendedor"/>
@@ -14,4 +15,10 @@
       
     </field>
   </record>
+  <!-- Ocultar botón "Quote Builder" en portal -->
+    <template id="portal_quote_content_inherit" inherit_id="sale.portal_quote">
+        <xpath expr="//a[contains(@href, 'quotation-builder')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+    </template>
 </odoo>
