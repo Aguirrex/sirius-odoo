@@ -1,21 +1,17 @@
-<!-- <odoo>
-  <template id="sirius_topbar_logo" inherit_id="web.webclient_templates">
-    <xpath expr="//div[@class='o_main_navbar']" position="inside">
-      <div class="sirius-global-logo"/>
-    </xpath>
-  </template>
-</odoo> -->
 <odoo>
-  <template id="sirius_topbar_logo" inherit_id="web.webclient_templates" name="Sirius Logo">
-    <xpath expr="//div[@class='o_main_navbar']" position="before">
-      <div class="sirius-global-logo">
-        <img src="/sirius_theme/static/src/img/logo.png" height="40px"/>
-      </div>
-    </xpath>
-  </template>
-  <template id="assets_backend" name="Sirius Backend Assets" inherit_id="web.assets_backend">
+  <!-- Incluir estilos backend -->
+  <template id="assets_backend" inherit_id="web.assets_backend" name="Custom backend styles">
     <xpath expr="." position="inside">
       <link rel="stylesheet" href="/sirius_theme/static/src/css/backend_styles.css"/>
     </xpath>
   </template>
+
+  <!-- Mostrar logo en la barra superior
+  <template id="sirius_topbar_logo" inherit_id="web.webclient_templates" name="Sirius Logo">
+    <xpath expr="//div[@class='o_main_navbar']//div[@class='o_menu_brand']" position="before">
+      <div class="sirius-global-logo">
+        <img src="/sirius_theme/static/src/img/logo.png" height="40px"/>
+      </div>
+    </xpath>
+  </template> -->
 </odoo>
