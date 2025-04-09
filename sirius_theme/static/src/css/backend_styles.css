@@ -64,7 +64,7 @@
 
 /* 🧭 Barra de encabezado de lista */
 .o_list_view thead > tr {
-    background-color: #ffc7e381;
+    background-color: #43494d8a;
     border-bottom: 2px solid #cfd8dc;
 }
 
@@ -136,3 +136,24 @@
     border-color: #90a4ae !important;
     color: white !important;
 }
+
+/* 🦓 Estilo zebra para líneas de productos en formularios */
+.o_form_view .o_field_x2many .o_list_table tbody tr:nth-child(odd) {
+    background-color: #ffead091; /* color claro para filas impares */
+}
+
+.o_form_view .o_field_x2many .o_list_table tbody tr:nth-child(even) {
+    background-color: #ffce9d7a; /* color más claro para filas pares */
+}
+
+/* Opcional: suavizar bordes */
+.o_form_view .o_field_x2many .o_list_table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Hover para mejor UX */
+.o_form_view .o_field_x2many .o_list_table tbody tr:hover {
+    background-color: #13e736;
+    transition: background-color 0.2s ease;
+}
+
