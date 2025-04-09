@@ -1,10 +1,10 @@
 <odoo>
-  <!-- Incluir estilos backend -->
   <template id="assets_backend" inherit_id="web.assets_backend" name="Custom backend styles">
     <xpath expr="." position="inside">
-      <link rel="stylesheet" href="/sirius_theme/static/src/css/backend_styles.css"/>
+      <link rel="stylesheet" type="text/css" href="/sirius_theme/static/src/css/backend_styles.css"/>
     </xpath>
   </template>
+</odoo>
 
   <!-- Mostrar logo en la barra superior
   <template id="sirius_topbar_logo" inherit_id="web.webclient_templates" name="Sirius Logo">
@@ -14,4 +14,4 @@
       </div>
     </xpath>
   </template> -->
-</odoo>
+
