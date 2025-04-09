@@ -1,15 +1,15 @@
 {
-    'name': 'Ventas Quindicolor',
+    'name': 'Venta Personalizada Quindicolor',
     'version': '1.0',
-    'author': 'Tu Nombre o Empresa',
+    'depends': ['sale'],
+    'author': 'Quindicolor',
     'category': 'Sales',
-    'depends': ['base', 'sale'],
+    'description': 'Personalización de ventas para Quindicolor',
     'data': [
         'security/ir.model.access.csv',
-        'views/sale_order_views.xml',
-        'views/sale_order_sequence.xml',
+        'views/sale_order_view.xml',
     ],
     'installable': True,
-    'application': True,
+    'application': False,
     'license': 'LGPL-3',
 }
