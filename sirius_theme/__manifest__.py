@@ -7,9 +7,12 @@
     'assets': {
         'web.assets_backend': [
             'sirius_theme/static/src/css/backend_styles.css',
-            'views/assets_backend.xml',
+            
         ],
     },
+    'data': [
+        'views/assets_backend.xml',
+    ],
     'installable': True,
     'application': False,
     'license': 'LGPL-3',

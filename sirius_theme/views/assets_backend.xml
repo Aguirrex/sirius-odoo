@@ -5,6 +5,7 @@
       <link rel="stylesheet" href="/sirius_theme/static/src/css/backend_styles.css"/>
     </xpath>
   </template>
+</odoo>
 
   <!-- Mostrar logo en la barra superior
   <template id="sirius_topbar_logo" inherit_id="web.webclient_templates" name="Sirius Logo">
@@ -14,4 +15,3 @@
       </div>
     </xpath>
   </template> -->
-</odoo>
