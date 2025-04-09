@@ -14,6 +14,12 @@
         "views/product_template_views.xml",
         'views/product_brand_views.xml', 
     ],
+    "assets": {
+        'web.assets_backend': [
+            '/inventory/static/img/product_images/*',
+,
+        ],
+    },
     'installable': True,
     'application': False,
     'auto_install': False,
