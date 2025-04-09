@@ -12,3 +12,31 @@
     border-color: #FFA726 !important;
     font-weight: bold;
 }
+
+/* Crear factura (naranja) */
+.btn.btn-primary.oe_highlight {
+    background-color: #FFA726 !important; /* Naranja claro */
+    border-color: #FFA726 !important;
+    color: white !important;
+}
+
+/* Enviar por correo (azul) */
+.o_form_button_send {
+    background-color: #42A5F5 !important;
+    border-color: #42A5F5 !important;
+    color: white !important;
+}
+
+/* Vista previa (gris azulado) */
+.o_form_button_preview {
+    background-color: #90A4AE !important;
+    border-color: #90A4AE !important;
+    color: white !important;
+}
+
+/* Cancelar (rojo) */
+.o_form_button_cancel {
+    background-color: #EF5350 !important;
+    border-color: #EF5350 !important;
+    color: white !important;
+}
