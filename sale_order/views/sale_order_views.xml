@@ -9,7 +9,7 @@
       </xpath>
       <xpath expr="//field[@name='payment_term_id']" position="replace">
         <field name="payment_term_id"
-               domain="[('name', 'in', ('Pago inmediato','15 días','21 días','30 días'))]"/>
+                domain="[('name', 'in', ('Pago inmediato', '15 Días', '21 Días', '30 Días'))]"/>
       </xpath>
     </field>
   </record>
