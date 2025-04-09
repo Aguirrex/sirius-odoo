@@ -1,0 +1,14 @@
+/* Color naranja claro para botones principales */
+.btn-primary {
+    background-color: #FFA726 !important;
+    border-color: #FFA726 !important;
+}
+
+/* Color para pestaña activa */
+.o_notebook .nav-tabs > li > a.active,
+.o_notebook .nav-tabs > li > a.active:hover {
+    background-color: #FFA726 !important;
+    color: white !important;
+    border-color: #FFA726 !important;
+    font-weight: bold;
+}
