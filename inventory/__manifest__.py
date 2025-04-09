@@ -17,7 +17,6 @@
     "assets": {
         'web.assets_backend': [
             '/inventory/static/img/product_images/*',
-,
         ],
     },
     'installable': True,
