@@ -1,0 +1,8 @@
+<!-- Ocultar botón "Quote Builder" en portal -->
+<odoo>
+  <template id="portal_quote_hide_builder" inherit_id="sale.portal_quote">
+    <xpath expr="//a[contains(@href, 'quotation-builder')]" position="attributes">
+      <attribute name="t-if">False</attribute>
+    </xpath>
+  </template>
+</odoo>
