@@ -1,5 +1,5 @@
 {
-    'name': 'Venta Personalizada Quindicolor',
+    'name': 'Quindicolor Ventas',
     'version': '1.0',
     'depends': ['sale'],
     'author': 'Quindicolor',

@@ -1,5 +1,5 @@
 {
-    'name': 'Sirius - Estilos Backend',
+    'name': 'Quindicolor - Estilos Backend',
     'version': '1.0',
     'category': 'Tools',
     'summary': 'Personalización visual del backend para Sirius',
