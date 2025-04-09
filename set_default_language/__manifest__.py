@@ -10,5 +10,5 @@
     'installable': True,
     'application': False,
     'auto_install': False,
-    'post_init_hook': 'post_init.set_default_lang_to_all_users',
+    'post_init_hook': 'set_default_lang_to_all_users',
 }

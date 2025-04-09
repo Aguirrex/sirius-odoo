@@ -1,1 +1,1 @@
-from . import post_init
+from .post_init import set_default_lang_to_all_users
