@@ -1,5 +1,5 @@
 {
-    'name': 'Venta Personalizada Quindicolor',
+    'name': 'Quindicolor Ventas',
     'version': '1.0',
     'depends': ['sale'],
     'author': 'Quindicolor',
@@ -11,6 +11,6 @@
     ],
     'installable': True,
     'application': False,
-    'auto_install': False,
+    'auto_install': True,
     'license': 'LGPL-3',
 }
