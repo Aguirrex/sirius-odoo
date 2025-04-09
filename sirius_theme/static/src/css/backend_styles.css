@@ -42,7 +42,7 @@
 }
 
 .sirius-logo-module {
-    background-image: url('/sirius_theme/static/src/img/logo_sidebar.png');
+    background-image: url('/sirius_theme/static/src/img/logo_topbar.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center left;
