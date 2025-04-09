@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="0">
+    
+    <record id="product_adhesivos_1" model="product.template">
+        <field name="name">Cinta Transparente Tesa</field>
+        <field name="categ_id" ref="inventory.product_category_adhesivos" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/adhesivos_1.png" /></record>
+    
+    <record id="product_adhesivos_2" model="product.template">
+        <field name="name">Cinta de Enmascarar Norton</field>
+        <field name="categ_id" ref="inventory.product_category_adhesivos" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/adhesivos_2.png" /></record>
+    
+    <record id="product_adhesivos_3" model="product.template">
+        <field name="name">Pegante Bondex K</field>
+        <field name="categ_id" ref="inventory.product_category_adhesivos" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/adhesivos_3.png" /></record>
+    
+    <record id="product_adhesivos_4" model="product.template">
+        <field name="name">Pegante Carpincol MR-60</field>
+        <field name="categ_id" ref="inventory.product_category_adhesivos" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/adhesivos_4.png" /></record>
+    
+    <record id="product_adhesivos_5" model="product.template">
+        <field name="name">Pegante Para Madera Cemento PL 285</field>
+        <field name="categ_id" ref="inventory.product_category_adhesivos" />
+        <field name="type">consu</field>
+        <field name="image_1920" type="base64" file="inventory/static/img/product_images/adhesivos_5.png" /> 
+    </record>
+    
+    <record id="product_adhesivos_6" model="product.template">
+        <field name="name">Pegante Para Madera Imperial</field>
+        <field name="categ_id" ref="inventory.product_category_adhesivos" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/adhesivos_6.png" /></record>
+    
+    <record id="product_adhesivos_7" model="product.template">
+        <field name="name">Pega Madera Plus 100</field>
+        <field name="categ_id" ref="inventory.product_category_adhesivos" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/adhesivos_7.png" /></record>
+    
+    <record id="product_adhesivos_8" model="product.template">
+        <field name="name">Pegante Arteplak 800</field>
+        <field name="categ_id" ref="inventory.product_category_adhesivos" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/adhesivos_8.png" /></record>
+    
+    <record id="product_adhesivos_9" model="product.template">
+        <field name="name">Pegante Arteplak 990</field>
+        <field name="categ_id" ref="inventory.product_category_adhesivos" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/adhesivos_9.png" /></record>
+    
+    <record id="product_adhesivos_10" model="product.template">
+        <field name="name">Pegante Madera Adhetex Blanco Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_adhesivos" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/adhesivos_10.png" /></record>
+    
+    <record id="product_adhesivos_11" model="product.template">
+        <field name="name">Pegante Madera Adhetex Rosado Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_adhesivos" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/adhesivos_11.png" /></record>
+    
+    
+    <record id="product_arquitectura_1" model="product.template">
+        <field name="name">Anticorrosivo Sinteico Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_1.png" /></record>
+    
+    <record id="product_arquitectura_2" model="product.template">
+        <field name="name">Anticorrosivo Semisintetico Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_2.png" /></record>
+    
+    <record id="product_arquitectura_3" model="product.template">
+        <field name="name">Esmalte Sintetico Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_3.png" /></record>
+    
+    <record id="product_arquitectura_4" model="product.template">
+        <field name="name">Esmalte Industrial Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_4.png" /></record>
+    
+    <record id="product_arquitectura_5" model="product.template">
+        <field name="name">Pintura Trafico Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_5.png" /></record>
+    
+    <record id="product_arquitectura_6" model="product.template">
+        <field name="name">Sika Techo</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_6.png" /></record>
+    
+    <record id="product_arquitectura_7" model="product.template">
+        <field name="name">Estuco Acrilico Sika</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_7.png" /></record>
+    
+    <record id="product_arquitectura_8" model="product.template">
+        <field name="name">Supermastick</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_8.png" /></record>
+    
+    <record id="product_arquitectura_9" model="product.template">
+        <field name="name">Recubrimiento Industial / Catalizador</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_9.png" /></record>
+    
+    <record id="product_arquitectura_10" model="product.template">
+        <field name="name">Vinilo Tipo 1 Pintuland</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_10.png" /></record>
+    
+    <record id="product_arquitectura_11" model="product.template">
+        <field name="name">Vinilo Tipo 2 Pintuland</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_11.png" /></record>
+    
+    <record id="product_arquitectura_12" model="product.template">
+        <field name="name">Esmalte Sintetico Linea Dorada Pintuland</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_12.png" /></record>
+    
+    <record id="product_arquitectura_13" model="product.template">
+        <field name="name">Esmalte Sintetico Linea Clasica Pintuland</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_13.png" /></record>
+    
+    <record id="product_arquitectura_14" model="product.template">
+        <field name="name">Barniz Sintetico Pintuland</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_14.png" /></record>
+    
+    <record id="product_arquitectura_15" model="product.template">
+        <field name="name">Bio Esmalte</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_15.png" /></record>
+    
+    <record id="product_arquitectura_16" model="product.template">
+        <field name="name">Bio Anticorrosivo</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_16.png" /></record>
+    
+    <record id="product_arquitectura_17" model="product.template">
+        <field name="name">Graniplas</field>
+        <field name="categ_id" ref="inventory.product_category_arquitectura" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/arquitectura_17.png" /></record>
+    
+    
+    <record id="product_automotriz_1" model="product.template">
+        <field name="name">Base Nitro</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_1.png" /></record>
+    
+    <record id="product_automotriz_2" model="product.template">
+        <field name="name">Poliuretano</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_2.png" /></record>
+    
+    <record id="product_automotriz_3" model="product.template">
+        <field name="name">Laca Nitro</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_3.png" /></record>
+    
+    <record id="product_automotriz_4" model="product.template">
+        <field name="name">Masilla Para Lamina Macar</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_4.png" /></record>
+    
+    <record id="product_automotriz_5" model="product.template">
+        <field name="name">Masilla Continental Macar</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_5.png" /></record>
+    
+    <record id="product_automotriz_6" model="product.template">
+        <field name="name">Laca Nitro Tonner</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_6.png" /></record>
+    
+    <record id="product_automotriz_7" model="product.template">
+        <field name="name">Barniz Poliuretano Caralz</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_7.png" /></record>
+    
+    <record id="product_automotriz_8" model="product.template">
+        <field name="name">Endurecedor POP Caralz</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_8.png" /></record>
+    
+    <record id="product_automotriz_9" model="product.template">
+        <field name="name">Cera Protectora Caralz</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_9.png" /></record>
+    
+    <record id="product_automotriz_10" model="product.template">
+        <field name="name">Liquido Pulidor Caralz</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_10.png" /></record>
+    
+    <record id="product_automotriz_11" model="product.template">
+        <field name="name">Balanceador Caralz</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_11.png" /></record>
+    
+    <record id="product_automotriz_13" model="product.template">
+        <field name="name">Barniz poliuretano MS-100 caralz</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_13.png" /></record>
+    
+    <record id="product_automotriz_14" model="product.template">
+        <field name="name">Catalizador Masilla Gricoat</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_14.png" /></record>
+    
+    <record id="product_automotriz_15" model="product.template">
+        <field name="name">Primer PU Gricoat</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_15.png" /></record>
+    
+    <record id="product_automotriz_16" model="product.template">
+        <field name="name">Barniz poliuretano Gricoat</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_16.png" /></record>
+    
+    <record id="product_automotriz_17" model="product.template">
+        <field name="name">Poliuretano Blanco Entonador Gricoat</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_17.png" /></record>
+    
+    <record id="product_automotriz_18" model="product.template">
+        <field name="name">Ajustador 450 PU Gricoat</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_18.png" /></record>
+    
+    <record id="product_automotriz_19" model="product.template">
+        <field name="name">Catalizador PU DC0010 Gricoat</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_19.png" /></record>
+    
+    <record id="product_automotriz_20" model="product.template">
+        <field name="name">Catalizadores Gricoat</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_20.png" /></record>
+    
+    <record id="product_automotriz_21" model="product.template">
+        <field name="name">Poliuretano Ixell</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_21.png" /></record>
+    
+    <record id="product_automotriz_22" model="product.template">
+        <field name="name">Catalizador Ixell</field>
+        <field name="categ_id" ref="inventory.product_category_automotriz" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/automotriz_22.png" /></record>
+    
+    
+    <record id="product_ferreteria_1" model="product.template">
+        <field name="name">Disco De Corte Carborundum</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_1.png" /></record>
+    
+    <record id="product_ferreteria_2" model="product.template">
+        <field name="name">Disco Esmeril Carborundum</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_2.png" /></record>
+    
+    <record id="product_ferreteria_3" model="product.template">
+        <field name="name">Disco De Desbaste Norton</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_3.png" /></record>
+    
+    <record id="product_ferreteria_4" model="product.template">
+        <field name="name">Lija Seca Carborundum</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_4.png" /></record>
+    
+    <record id="product_ferreteria_5" model="product.template">
+        <field name="name">Lija De Agua Norton</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_5.png" /></record>
+    
+    <record id="product_ferreteria_6" model="product.template">
+        <field name="name">Lija De Banda Carborundum</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_6.png" /></record>
+    
+    <record id="product_ferreteria_7" model="product.template">
+        <field name="name">Lija de Banda Norton</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_7.png" /></record>
+    
+    <record id="product_ferreteria_8" model="product.template">
+        <field name="name">Lija Orbital</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_8.png" /></record>
+    
+    <record id="product_ferreteria_9" model="product.template">
+        <field name="name">Espatula plastica</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_9.png" /></record>
+    
+    <record id="product_ferreteria_10" model="product.template">
+        <field name="name">Espatula Goya</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_10.png" /></record>
+    
+    <record id="product_ferreteria_11" model="product.template">
+        <field name="name">Brocha Goya</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_11.png" /></record>
+    
+    <record id="product_ferreteria_13" model="product.template">
+        <field name="name">Pistola Thomas 527</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_13.png" /></record>
+    
+    <record id="product_ferreteria_14" model="product.template">
+        <field name="name">Pistola Thomas W-71G</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_14.png" /></record>
+    
+    <record id="product_ferreteria_15" model="product.template">
+        <field name="name">Pistola Thomas F-75G</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_15.png" /></record>
+    
+    <record id="product_ferreteria_16" model="product.template">
+        <field name="name">Rodillo Goya</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_16.png" /></record>
+    
+    <record id="product_ferreteria_17" model="product.template">
+        <field name="name">Rodillo Antigota Goya</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_17.png" /></record>
+    
+    <record id="product_ferreteria_18" model="product.template">
+        <field name="name">Pinceles</field>
+        <field name="categ_id" ref="inventory.product_category_ferreteria" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_18.png" /></record>
+    
+    
+    <record id="product_madera_1" model="product.template">
+        <field name="name">Barniz Poliuretano Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_1.png" /></record>
+    
+    <record id="product_madera_2" model="product.template">
+        <field name="name">Base Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_2.png" /></record>
+    
+    <record id="product_madera_3" model="product.template">
+        <field name="name">Sellador Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_3.png" /></record>
+    
+    <record id="product_madera_4" model="product.template">
+        <field name="name">Sellador Nitro Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_4.png" /></record>
+    
+    <record id="product_madera_5" model="product.template">
+        <field name="name">Base Nitro Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_5.png" /></record>
+    
+    <record id="product_madera_6" model="product.template">
+        <field name="name">Laca Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_6.png" /></record>
+    
+    <record id="product_madera_7" model="product.template">
+        <field name="name">Removedor De Pintura Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_7.png" /></record>
+    
+    <record id="product_madera_8" model="product.template">
+        <field name="name">Catalizador Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_8.png" /></record>
+    
+    <record id="product_madera_9" model="product.template">
+        <field name="name">Tinte Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_9.png" /></record>
+    
+    <record id="product_madera_10" model="product.template">
+        <field name="name">Bio Barniz Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_10.png" /></record>
+    
+    <record id="product_madera_11" model="product.template">
+        <field name="name">Aqua Laca Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_11.png" /></record>
+    
+    <record id="product_madera_12" model="product.template">
+        <field name="name">Aqua Sellado Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_12.png" /></record>
+    
+    <record id="product_madera_13" model="product.template">
+        <field name="name">Eco Masilla</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_13.png" /></record>
+    
+    <record id="product_madera_14" model="product.template">
+        <field name="name">Plasti Flex</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_14.png" /></record>
+    
+    <record id="product_madera_15" model="product.template">
+        <field name="name">Color Plus Profilan</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_15.png" /></record>
+    
+    <record id="product_madera_16" model="product.template">
+        <field name="name">Tinte Every</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_16.png" /></record>
+    
+    <record id="product_madera_17" model="product.template">
+        <field name="name">Barniz Madetec Pintuco</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+        <field name="x_is_paint" eval="True" />
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_17.png" /></record>
+    
+    <record id="product_madera_18" model="product.template">
+        <field name="name">Alcohol Universal Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_18.png" /></record>
+    
+    <record id="product_madera_19" model="product.template">
+        <field name="name">Varsol Quindicolor</field>
+        <field name="categ_id" ref="inventory.product_category_madera" />
+        <field name="type">consu</field>
+    <field name="image_1920" type="base64" file="inventory/static/img/product_images/madera_19.png" /></record>
+</odoo>

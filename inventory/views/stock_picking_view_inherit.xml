@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_picking_form_inherit_mi_modulo" model="ir.ui.view">
+            <field name="name">stock.picking.form.inherit.mi.modulo</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='origin']" position="after">
+                    <field name="x_referencia_externa"/>
+                </xpath>
+
+               
+                <xpath expr="//group[.//field[@name='picking_type_id']]" position="inside">
+                     <field name="x_requiere_revision_calidad"/>
+                </xpath>
+
+                
+                 <xpath expr="//field[@name='scheduled_date']" position="attributes">
+                    <attribute name="readonly">[('x_requiere_revision_calidad', '=', True)]</attribute>
+                </xpath>
+
+                
+                <xpath expr="//page[@name='operations']//field[@name='move_ids_without_package']" position="before">
+                    <div>
+                        <label for="x_referencia_externa" string="Ref. Externa (Pestaña Ops):"/>
+                        <field name="x_referencia_externa" nolabel="1"/> <!-- nolabel=1 para que no repita la etiqueta -->
+                    </div>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>
