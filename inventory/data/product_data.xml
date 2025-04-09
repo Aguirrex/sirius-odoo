@@ -515,7 +515,7 @@
     <record id="product_ferreteria_13" model="product.template">
         <field name="name">Pistola Thomas 527</field>
         <field name="categ_id" ref="inventory.product_category_ferreteria" />
-        <field name="type">product</field> <!-- Es una herramienta, no consumible -->
+        <field name="type">consu</field> <!-- Es una herramienta, no consumible -->
         <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_13.png" />
         <field name="list_price">90000</field> <!-- Pistola de pintar básica, precio por unidad -->
     </record>
@@ -523,7 +523,7 @@
     <record id="product_ferreteria_14" model="product.template">
         <field name="name">Pistola Thomas W-71G</field>
         <field name="categ_id" ref="inventory.product_category_ferreteria" />
-        <field name="type">product</field> <!-- Es una herramienta, no consumible -->
+        <field name="type">consu</field> <!-- Es una herramienta, no consumible -->
         <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_14.png" />
         <field name="list_price">120000</field> <!-- Pistola de pintar estándar, precio por unidad -->
     </record>
@@ -531,7 +531,7 @@
     <record id="product_ferreteria_15" model="product.template">
         <field name="name">Pistola Thomas F-75G</field>
         <field name="categ_id" ref="inventory.product_category_ferreteria" />
-        <field name="type">product</field> <!-- Es una herramienta, no consumible -->
+        <field name="type">consu</field> <!-- Es una herramienta, no consumible -->
         <field name="image_1920" type="base64" file="inventory/static/img/product_images/ferreteria_15.png" />
         <field name="list_price">110000</field> <!-- Pistola de pintar estándar, precio por unidad -->
     </record>
