@@ -64,7 +64,7 @@
 
 /* 🧭 Barra de encabezado de lista */
 .o_list_view thead > tr {
-    background-color: #29292b;
+    background-color: #2526291e;
     border-bottom: 2px solid #cfd8dc;
     color: #ffffff; /* letra clara */
 }
@@ -113,7 +113,7 @@
 
 /* 🌐 Barra superior global */
 .o_main_navbar {
-    background-color: #1e293b !important; /* azul grisáceo */
+    background-color: #1e293ba9 !important; /* azul grisáceo */
     color: white !important;
 }
 
