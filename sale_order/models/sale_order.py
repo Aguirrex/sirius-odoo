@@ -9,3 +9,5 @@ class SaleOrder(models.Model):
         ('zona_centro', 'Zona Centro'),
     ], string="Zona de Entrega")
 
+
+
