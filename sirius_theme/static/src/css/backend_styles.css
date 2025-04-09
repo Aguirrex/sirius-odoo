@@ -89,7 +89,7 @@
 
 /* 🧭 Barra de encabezado de lista */
 .o_list_view thead > tr {
-    background-color: #b4e1ff;
+    background-color: #ffc7e381;
     border-bottom: 2px solid #cfd8dc;
 }
 
@@ -103,4 +103,26 @@
 .o_list_view tbody > tr:hover {
     background-color: #b6fcea;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+/* Orden de venta */
+.o_field_badge:has(.badge:contains("Orden de venta")) .badge {
+    background-color: #baf0bd !important;
+    color: #fff !important;
+    border: none;
+}
+
+/* Cotización */
+.o_field_badge:has(.badge:contains("Cotización")) .badge {
+    background-color: #f8e3c2 !important;
+    color: #fff !important;
+    border: none;
+}
+
+/* Cotización enviada */
+.o_field_badge:has(.badge:contains("Cotización enviada")) .badge {
+    background-color: #ddc0f0 !important;
+    color: #fff !important;
+    border: none;
 }
