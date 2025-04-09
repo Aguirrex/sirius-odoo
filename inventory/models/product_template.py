@@ -39,8 +39,9 @@ class ProductTemplate(models.Model):
 
     @api.depends('categ_id')
     def _compute_show_technical_details(self):
-        madera_category = self.env.ref('inventory.product_category_madera')
-        arquitectura_category = self.env.ref('inventory.product_category_arquitectura')
-        automotriz_category = self.env.ref('inventory.product_category_automotriz')
+        # Busca las categorías por nombre en lugar de ID externo
+        category_names = ['Madera', 'Arquitectura', 'Automotriz']
+        
         for record in self:
-            record.x_show_technical_details = record.categ_id in (madera_category | arquitectura_category | automotriz_category)
+            # Comprueba si el nombre de la categoría del producto está en la lista
+            record.x_show_technical_details = record.categ_id.name in category_names
