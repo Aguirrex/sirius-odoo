@@ -64,8 +64,9 @@
 
 /* 🧭 Barra de encabezado de lista */
 .o_list_view thead > tr {
-    background-color: #2b2a29;
+    background-color: #29292b;
     border-bottom: 2px solid #cfd8dc;
+    color: #ffffff; /* letra clara */
 }
 
 /* 📋 Estilo personalizado para filas de tabla */
