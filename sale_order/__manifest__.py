@@ -7,7 +7,7 @@
     'description': 'Personalización de ventas para Quindicolor',
     'data': [
         'security/ir.model.access.csv',
-        'views/sale_order_view.xml',
+        'views/sale_order_views.xml',
     ],
     'installable': True,
     'application': False,
