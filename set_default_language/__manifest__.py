@@ -1,5 +1,5 @@
 {
-    'name': 'Set Default Language ',
+    'name': 'Set Default Language',
     'version': '1.0',
     'category': 'Tools',
     'summary': 'Set Spanish as default language automatically',
