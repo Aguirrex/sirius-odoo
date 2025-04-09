@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import models, fields, api
 
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
@@ -34,3 +34,12 @@ class ProductTemplate(models.Model):
     # Asegúrate de que el modelo 'product.brand' exista o créalo.
     # Si prefieres algo más simple, puedes cambiarlo a fields.Char o fields.Selection.
     x_brand = fields.Many2one('product.brand', string='Marca', help="Marca del producto (ej. Quindicolor, Pintuland, Sika).")
+
+
+    @api.depends('categ_id')
+    def _compute_show_technical_details(self):
+        madera_category = self.env.ref('inventory.product_category_madera')
+        arquitectura_category = self.env.ref('inventory.product_category_arquitectura')
+        automotriz_category = self.env.ref('inventory.product_category_automotriz')
+        for record in self:
+            record.x_show_technical_details = record.categ_id in (madera_category | arquitectura_category | automotriz_category)
