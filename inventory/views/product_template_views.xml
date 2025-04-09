@@ -14,7 +14,7 @@
                     <!-- Usamos grupos para organizar los campos -->
                     <!-- El atributo 'invisible' reemplaza a 'attrs' para la visibilidad condicional en Odoo 16+ -->
                     <!-- El grupo será invisible cuando x_is_paint sea False -->
-                    <group string="Detalles Técnicos Personalizados" name="custom_technical_details"
+                    <group string="Detalles Técnicos Para Pintura" name="custom_technical_details"
                            invisible="x_is_paint == False">
                         <field name="x_base_type"/>
                         <field name="x_finish"/>
