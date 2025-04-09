@@ -5,3 +5,17 @@
     </xpath>
   </template>
 </odoo> -->
+<odoo>
+  <template id="sirius_topbar_logo" inherit_id="web.webclient_templates" name="Sirius Logo">
+    <xpath expr="//div[@class='o_main_navbar']" position="before">
+      <div class="sirius-global-logo">
+        <img src="/sirius_theme/static/src/img/logo.png" height="40px"/>
+      </div>
+    </xpath>
+  </template>
+  <template id="assets_backend" name="Sirius Backend Assets" inherit_id="web.assets_backend">
+    <xpath expr="." position="inside">
+      <link rel="stylesheet" href="/sirius_theme/static/src/css/backend_styles.css"/>
+    </xpath>
+  </template>
+</odoo>
