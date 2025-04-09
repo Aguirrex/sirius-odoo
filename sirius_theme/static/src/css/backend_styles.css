@@ -61,12 +61,12 @@
     object-fit: contain;
 } */
 
-/* .badge.o_status {
+.badge.o_status {
     font-weight: bold;
     font-size: 13px;
     padding: 4px 10px;
     border-radius: 8px;
-} */
+}
 
 /* Colores personalizados por estado */
 .badge.o_status:contains("Orden de venta") {
