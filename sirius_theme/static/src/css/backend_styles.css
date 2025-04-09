@@ -51,7 +51,7 @@
     margin-right: 15px;
 } */
 
-.sirius-global-logo {
+/* .sirius-global-logo {
     padding: 0 10px;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@
 .sirius-global-logo img {
     max-height: 40px;
     object-fit: contain;
-}
+} */
 
 .badge.o_status {
     font-weight: bold;
