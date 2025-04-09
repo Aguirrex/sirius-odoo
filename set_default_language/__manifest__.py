@@ -11,4 +11,6 @@
     'application': False,
     'auto_install': False,
     'post_init_hook': 'set_default_lang_to_all_users',
+
+    "license": 'LGPL-3'
 }
