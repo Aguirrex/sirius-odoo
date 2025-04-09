@@ -1,13 +1,13 @@
 /* Color naranja claro para botones principales */
 .btn-primary {
-    background-color: #FFA726 !important;
+    background-color: #f1c583 !important;
     border-color: #FFA726 !important;
 }
 
 /* Color para pestaña activa */
 .o_notebook .nav-tabs > li > a.active,
 .o_notebook .nav-tabs > li > a.active:hover {
-    background-color: #f8a529 !important;
+    background-color: #ecc993 !important;
     color: white !important;
     border-color: #FFA726 !important;
     font-weight: bold;
@@ -59,4 +59,48 @@
 .sirius-global-logo img {
     max-height: 40px;
     object-fit: contain;
+}
+
+/* 🎨 Colores personalizados para badges de estado */
+.badge.o_status {
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 4px 12px;
+}
+
+/* Verde oscuro para "Orden de venta" */
+.badge.o_status:has(span:contains("Orden de venta")) {
+    background-color: #b1ffb5 !important;
+    color: #fff;
+}
+
+/* Amarillo mostaza para "Cotización" */
+.badge.o_status:has(span:contains("Cotización")) {
+    background-color: #fadba9 !important;
+    color: #fff;
+}
+
+/* Púrpura para "Cotización enviada" */
+.badge.o_status:has(span:contains("Cotización enviada")) {
+    background-color: #e0afff !important;
+    color: #fff;
+}
+
+/* 🧭 Barra de encabezado de lista */
+.o_list_view thead > tr {
+    background-color: #b4e1ff;
+    border-bottom: 2px solid #cfd8dc;
+}
+
+/* 📋 Estilo personalizado para filas de tabla */
+.o_list_view tbody > tr {
+    background-color: #ffbfbf;
+    transition: all 0.15s ease-in-out;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.o_list_view tbody > tr:hover {
+    background-color: #b6fcea;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
