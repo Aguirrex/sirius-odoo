@@ -1,0 +1,7 @@
+<odoo>
+  <template id="sirius_backend_logo" inherit_id="web.webclient_templates" name="Sirius Custom Logo">
+    <xpath expr="//div[@class='o_control_panel']/div[@class='o_cp_left']" position="before">
+      <div class="sirius-logo-module" role="img" aria-label="Sirius Logo"></div>
+    </xpath>
+  </template>
+</odoo>

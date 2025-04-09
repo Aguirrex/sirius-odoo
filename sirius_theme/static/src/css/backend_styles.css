@@ -40,3 +40,13 @@
     border-color: #EF5350 !important;
     color: white !important;
 }
+
+.sirius-logo-module {
+    background-image: url('/sirius_theme/static/src/img/logo_sidebar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+    width: 100px;
+    height: 40px;
+    margin-right: 15px;
+}
