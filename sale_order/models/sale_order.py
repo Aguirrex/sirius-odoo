@@ -4,7 +4,7 @@ class SaleOrder(models.Model):
     _name = 'quindicolor.sale.order'
     _description = 'Orden de Venta Quindicolor'
 
-    name = fields.Char(string='Referencia', required=True, copy=False, readonly=True, default=lambda self: ('Nuevo'))
+    name = fields.Char(string='Referencia', required=True, copy=False, readonly=True, default='Nuevo')
     date = fields.Date(string='Fecha', default=fields.Date.today, required=True)
     customer_id = fields.Many2one('res.partner', string='Cliente', required=True)
     business_line = fields.Selection([
@@ -28,14 +28,11 @@ class SaleOrder(models.Model):
         for record in self:
             record.total_amount = sum(record.product_line_ids.mapped('subtotal'))
 
-    # Métodos agregados
     def action_confirm(self):
-        for record in self:
-            record.state = 'confirm'
+        self.state = 'confirm'
 
     def action_cancel(self):
-        for record in self:
-            record.state = 'cancel'
+        self.state = 'cancel'
 
 class SaleOrderLine(models.Model):
     _name = 'quindicolor.sale.order.line'
