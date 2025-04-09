@@ -31,17 +31,7 @@ class ProductTemplate(models.Model):
 
     x_performance = fields.Float(string='Rendimiento (m²/galón)', help="Rendimiento aproximado del producto por galón.")
 
-    # Asegúrate de que el modelo 'product.brand' exista o créalo.
-    # Si prefieres algo más simple, puedes cambiarlo a fields.Char o fields.Selection.
     x_brand = fields.Many2one('product.brand', string='Marca', help="Marca del producto (ej. Quindicolor, Pintuland, Sika).")
 
-    x_show_technical_details = fields.Boolean(string="Mostrar Detalles Técnicos", compute='_compute_show_technical_details', store=True)
-
-    @api.depends('categ_id')
-    def _compute_show_technical_details(self):
-        # Busca las categorías por nombre en lugar de ID externo
-        category_names = ['Madera', 'Arquitectura', 'Automotriz']
-        
-        for record in self:
-            # Comprueba si el nombre de la categoría del producto está en la lista
-            record.x_show_technical_details = record.categ_id.name in category_names
+    x_is_paint = fields.Boolean(string="Es Pintura", default=False, 
+                              help="Marcar si el producto es pintura para mostrar detalles técnicos específicos.")
