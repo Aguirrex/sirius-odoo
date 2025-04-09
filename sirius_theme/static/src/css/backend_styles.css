@@ -8,7 +8,7 @@
 .o_notebook .nav-tabs > li > a.active,
 .o_notebook .nav-tabs > li > a.active:hover {
     background-color: #fff5e6 !important;
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     border-color: #FFA726 !important;
     font-weight: bold;
 }
@@ -17,7 +17,7 @@
 .btn.btn-primary.oe_highlight {
     background-color: #fff3e0 !important; /* Naranja claro */
     border-color: #FFA726 !important;
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 /* Enviar por correo (azul) */
